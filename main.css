@@ -1,0 +1,554 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Outfit", sans-serif;
+    overflow-x: hidden;
+}
+
+.peak {
+    height: 30px;
+}
+
+.peak_left {
+    font-size: 13px;
+    height: 30px;
+    list-style: none;
+}
+
+.peak_left a {
+    text-decoration: none;
+    color: rgb(68, 67, 67)
+}
+
+.peak_left a:hover {
+    color: rgb(34, 34, 34);
+    text-decoration: underline;
+}
+
+.icons {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* nav creation now//////////////////////// */
+
+.navbar {
+    height: 80px;
+    border-top: 1px solid rgb(202, 201, 201);
+    border-bottom: 1px solid rgb(202, 201, 201);
+}
+
+.nav1 {
+    height: 80px;
+    width: 100%;
+    min-width: 100px;
+    max-width: 220px;
+    float: left
+}
+
+.nav1 h1 {
+    font-size: 60px;
+    margin-bottom: 16px;
+    /* background: linear-gradient(to right, red, yellow, green, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.nav1 .catagory {
+    font-size: 12px;
+    color: rgb(94, 94, 94);
+    cursor: pointer;
+    width: 70px;
+}
+
+.input {
+    height: 45px;
+    min-width: 250px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border: 2px solid rgb(37, 37, 37);
+    border-right: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.search i {
+    position: absolute;
+    color: rgb(80, 79, 79);
+    margin-right: 100%;
+    transform: translateX(30px);
+    font-size: 15px;
+}
+
+.search_btn {
+    background-color: white;
+    width: 20%;
+    max-width: 100px;
+    min-width: 100px;
+    height: 45px;
+    border: 2px solid black;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border-left: 1px solid rgb(212, 211, 211);
+    cursor: pointer;
+    color: gray;
+    font-size: 12px;
+}
+
+.search_button:hover {
+    filter: brightness(.8);
+}
+
+.nav3 {
+    height: 80px;
+    width: 100%;
+    min-width: 100px;
+    max-width: 200px;
+}
+
+.nav3 button {
+    height: 45px;
+    width: 100px;
+    background-color: rgb(41, 97, 250);
+    color: white;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    transition: .5s;
+    cursor: pointer;
+    margin-left: -10px;
+}
+
+.nav3 button:hover {
+    background-color: rgb(2, 53, 194);
+}
+
+.nav3 a {
+    font-size: 13px;
+    text-decoration: none;
+    color: rgb(114, 112, 112);
+    width: 60px
+}
+
+.hover:hover {
+    color: rgb(0, 0, 0);
+}
+
+@media only screen and (min-width:576px) and (max-width:991px) {
+    .nav3 {
+        max-width: 100px;
+    }
+}
+
+@media only screen and (min-width:300px) and (max-width:767px) {
+    .input {
+        border-right: 2px solid black;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+    .search_button {
+        background: rgb(10, 129, 240);
+        position: absolute;
+        margin-left: 100%;
+        transform: translateX(-42px);
+        border: none;
+        outline: none;
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        color: white;
+        transition: .3s;
+    }
+
+    .nav1 h1 {
+        font-size: 55px;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:992px) {}
+
+/* downlinks creation...//////////////////////////// */
+
+.downlink {
+    padding: 0px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.downlink ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.downlink ul li {
+    font-size: 13px;
+    color: rgb(24, 24, 24);
+    height: 25px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.downlink ul li:hover {
+    background-color: rgb(216, 213, 213);
+}
+
+/* hero section creation /////////////////////////////// */
+
+.hero {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    height: 400px;
+}
+
+.mainhero p {
+    font-size: 60px;
+    color: rgb(252, 250, 250);
+    text-shadow: 0px 0px 20px rgb(17, 16, 16);
+    font-weight: bold;
+    transition: .5s;
+}
+
+.mainhero span {
+    font-size: 15px;
+    color: white;
+    text-shadow: 0px 0px 20px rgb(7, 7, 7);
+}
+
+.butt button {
+    background-color: rgb(3, 63, 228);
+    height: 45px;
+    width: 180px;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    border: none;
+    transition: .5s;
+}
+
+.btn_hover:hover {
+    filter: brightness(150%);
+    transform: translateY(-6px);
+}
+
+@media only screen and (min-width:300px) and (max-width:767px) {
+    .mainhero p {
+        font-size: 43px;
+    }
+
+    .butt button {
+        width: 130px;
+    }
+}
+
+/* shop box creation///////////////// */
+.shopbox {
+    margin-top: 35px;
+    background-color: whitesmoke;
+    padding: 10px 30px;
+}
+
+.shopbox p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.shopbox .in {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.shopbox button {
+    height: 40px;
+    width: 130px;
+    background-color: rgb(3, 3, 3);
+    padding: 3px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+@media only screen and (min-width:300px) and (max-width:767px) {
+    .shopbox p {
+        font-size: 25px;
+    }
+
+    .shopbox button {
+        height: 35px;
+        font-size: 13px;
+    }
+}
+
+/* feature section creation /////////////// */
+.features {
+    padding: 0px 50px;
+    margin-top: 40px;
+}
+
+.features p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.item_box {
+    height: 200px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.item_box:hover {
+    border-bottom: 2px solid black;
+}
+
+.features_items {
+    list-style: none;
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    background-color: rgb(236, 235, 235);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.features_box img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.features_box p {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+@media only screen and (min-width:300px) and (max-width:1400px) {
+    .features_box {
+        overflow-x: scroll;
+        padding-bottom: 10px;
+    }
+
+    .features_box::-webkit-scrollbar {
+        height: 6px;
+        background: transparent;
+        transition: 1s;
+    }
+
+    .features_box::-webkit-scrollbar-thumb {
+        background: transparent;
+        border-radius: 4px;
+    }
+
+    .features_box:hover::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    .features_box:hover::-webkit-scrollbar {
+        background: #f1f1f1;
+    }
+
+    .features_box::-webkit-scrollbar-button {
+        display: none;
+    }
+}
+
+/* today section creation/////////////////// */
+.today {
+    padding-bottom: 10px;
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    gap: 10px;
+    padding-left: 50px;
+    margin-top: 40px;
+}
+
+.deal_img {
+    height: 250px;
+    width: 250px;
+    background-color: rgb(236, 235, 235);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.deal_img img {
+    width: 160px;
+}
+
+.today p {
+    width: 200px
+}
+
+.today .price {
+    font-weight: bold;
+}
+
+/* footer baner styling///////////////////////// */
+
+.baner { 
+    height: 370px;
+    background-image: url('images/shoping.jpg');
+    background-size: cover;
+    margin-top: 50px;
+}
+
+.baner2 {
+    height:auto ;
+    background-color: black;
+}
+
+.baner_box,
+.baner_box2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.baner p:nth-child(1),
+.baner2 p:nth-child(1) {
+    width:100%;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+
+.baner p:nth-child(2),
+.baner2 p:nth-child(2) {
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+
+.baner button,
+.baner2 button {
+    height: 40px;
+    width: 140px;
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    background-color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition:.5s;
+}
+
+.frams {
+    display: flex;
+    gap: 10px;
+    padding:70px 0px
+}
+
+.fram1 {
+    height: 230px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+    overflow: hidden;
+    transform: rotate(20deg);
+    z-index: 1;
+}
+
+.fram2 {
+    height: 200px;
+    width: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+    overflow: hidden;
+    transform: rotate(-20deg);
+}
+
+@media only screen and (min-width:300px) and (max-width:991px) {
+
+    .baner p:nth-child(1),
+    .baner2 p:nth-child(1) {
+        font-size: 37px;
+        
+    }
+    .baner p:nth-child(2),
+    .baner2 p:nth-child(2) {
+        font-size: 16px;
+        width:350px
+    }
+}
+
+/* footer creation/////////////////// */
+footer {
+    height: 430px;
+}
+
+.footer {
+
+    margin-top: 50px;
+    border-top: 1px solid rgb(199, 198, 198);
+    display: flex;
+    justify-content: space-between;
+    padding: 50px
+}
+
+.sec ul {
+    /* margin-top: 50px; */
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.sec li a {
+    text-decoration: none;
+    color: rgb(95, 94, 94)
+}
+
+.sec li a:hover {
+    text-decoration: underline;
+}
+
+.eb {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid rgb(180, 178, 178);
+}
+
+.eb p {
+    font-family: cursive;
+    font-size: 130px;
+    font-weight: bold;
+    color: rgb(145, 144, 144)
+}

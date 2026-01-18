@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div style="font-size: 60px; " class="ps-3 d-flex justify-content-between ">
+        <p><span class="text-danger">e</span><span class="text-primary">b</span><span class="text-warning">a</span><span
+                class="text-success">y</span></p>
+        <a href="home.html" class=" fs-2 pe-5 text-dark fw-bold"><i class="bi bi-x-lg"></i></a>
+
+    </div>
+    <hr>
+    <div class="d-flex justify-content-center align-items-center ">
+        <div class="pb-4 rounded-5 main">
+            <form>
+                <div class="text-center rounded-3 form ">
+                    <p><span class="text-danger">e</span><span class="text-primary">b</span><span
+                            class="text-warning">a</span><span class="text-success">y</span></p>
+                </div>
+                <p class="text-center fw-bold pb-3 " style="font-size: 20px;">Sign-in to your account.</p>
+
+                <div class="position-relative d-flex put1 ">
+                    <input type="text" name="name" required="" id="inp">
+                    <label id="lable"> name</label>
+                </div>
+                <div class="position-relative d-flex put1 ">
+                    <input type="email" name="email" required="" id="inp">
+                    <label id="lable"> email</label>
+                </div>
+                <div class="position-relative d-flex put1">
+                    <input type="password" name="password" maxlength="12" minlength="8" required="" id="inp">
+                    <label id="lable">password</label>
+                </div>
+                <div class="d-flex align-items-center justify-content-between p-3 mt-3 rem ">
+                    <div><input type="checkbox" /> Remember me</div>
+                    <a href="">have an account?</a>
+                </div>
+                <div class="d-flex align-items-center justify-content-center buton ">
+                    <input type="submit" name="Login" value="Sign-up"
+                        class="rounded-5 text-white mt-5 bg-primary border-0 w-50">
+                </div>
+                <div class="d-flex mt-2 align-items-center justify-content-center fs-25 end">
+                    <span>Already have an account</span>
+                    <a href="" class="text-primary ms-1">login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
